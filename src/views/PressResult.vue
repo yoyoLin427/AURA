@@ -151,7 +151,7 @@
   width: 40.44vh;
   height: 7.03vh;
   position: absolute;
-  bottom: 10.26vh;
+  bottom: 5.26vh;
   display: flex;
   align-items: center;
   justify-content: center;
