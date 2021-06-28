@@ -45,6 +45,9 @@ export default {
       } else if (this.destination == "reload") {
         this.reload();
       } else {
+        if(this.destination == "MoodTree") {
+          this.$store.commit("setMoodTreemode", "hollow");
+        }
         this.$router.push({ name: this.destination });
       }
     },

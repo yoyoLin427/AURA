@@ -85,7 +85,7 @@ export default {
   name: "MoodTree",
   data() {
     return {
-      choose_mood: true,
+      choose_mood: true, 
     };
   },
   components: {
@@ -99,5 +99,11 @@ export default {
       this.choose_mood = !this.choose_mood;
     },
   },
+  created() {
+    if(this.$store.state.MoodTreemode == "hollow") {
+      this.choose_mood = false;
+      this.$store.commit("setMoodTreemode", "tree");
+    }
+  }
 };
 </script>
