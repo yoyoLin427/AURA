@@ -305,6 +305,7 @@ export default {
     getexpertsort() {
       this.$store.state.mentalInfo.forEach((i) => {
         this.expert.push(i);
+        this.namelist[i.id] = i.name;
       });
     },
     getpickid() {
