@@ -21,6 +21,7 @@ export default new Vuex.Store({
     read_date: '',
     number: '',
     read_mode: '',
+    MoodTreemode: '',
   },
 
   mutations: {
@@ -66,6 +67,9 @@ export default new Vuex.Store({
     },
     setReadMode(state, read_mode) {
       state.read_mode = read_mode
+    },
+    setMoodTreemode(state, moodtreemode) {
+      state.MoodTreemode = moodtreemode
     }
   },
   plugins: [createPersistedState()]
