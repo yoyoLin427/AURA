@@ -2,7 +2,7 @@
   <div class="container">
     <Nav  showUser="true" />
     <div id="layout_reserve">
-      <div id="layout_up">
+      <div id="layout_up_reserve">
         <div id="famous_box">
           <img
             id="famous_box_border"
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div id="layout_down">
+      <div id="layout_down_reserve">
         <div id="content_reserve">
           <p id="t1">個人諮商初談注意事項</p>
 
@@ -142,7 +142,7 @@ blockquote {
 .full_width_img {
   width: 100%;
 }
-#layout_up {
+#layout_up_reserve {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,10 +230,9 @@ blockquote {
   font-size: 1.4vh;
   line-height: 2.5vh;
 }
-#layout_down {
+#layout_down_reserve {
   padding: 0 4vh;
   width: 100vw;
-  height: 70.97vh;
 }
 #content_reserve {
   display: flex;
