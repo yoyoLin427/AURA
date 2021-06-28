@@ -584,7 +584,7 @@ module.exports = {
         var emoji = req.body.emoji
         var date = req.body.date
         var text1 = req.body.text1
-        var text2 = req.body.text1
+        var text2 = req.body.text2
         var time = req.body.time
         var isPublic = req.body.isPublic
         var addtext = req.body.addtext
@@ -608,7 +608,7 @@ module.exports = {
         pool.getConnection((err, connection) => {
             connection.query(sql, [id], (err, result) => {
                 if (err) throw err;
-                console.log(result)
+                //console.log(result)
                 res.send(result);
                 connection.release();
             });
