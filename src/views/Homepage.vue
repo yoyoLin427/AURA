@@ -1,22 +1,6 @@
 <template>
   <div>
-    <div class="logobar">
-      <b-container>
-        <b-row>
-          <b-col class="text-center">
-            <img class="logoimg" src="@/assets/svg/logo.svg" />
-          </b-col>
-        </b-row>
-        <b-col class="imgright">
-          <img @click="toProfile()" class="usericonimg" src="@/assets/svg/usericon.svg" />
-        </b-col>
-      </b-container>
-    </div>
-    <div class="emptybar"></div>
-    <div class="banner">
-      <img id="slide1" src="@/assets/yoyoLin/home_slide1.svg" />
-      <img id="slide2" src="@/assets/yoyoLin/home_slide2.svg" />
-    </div>
+    <Nav showUser=true ></Nav>
     <div class="title">哈囉，歡迎來到Aura！</div>
     <div class="text_nofade">
       還不知道從哪裡開始使用嗎？可以先用1分鐘的評估測驗來檢測你現在的壓力與情緒狀態，並進一步了解Aura能幫助你什麼與你現在適合使用怎樣的資源。

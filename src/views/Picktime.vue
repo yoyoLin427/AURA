@@ -2,7 +2,7 @@
   <div class="desktop">
     <div class="darken" v-show="seen"></div>
     <div id="namebar">
-      <Nav showBackArrow="true" showText navText="挑選日期與時間" destination="analysis" />
+      <Nav showBackArrow="true" showText navText="挑選日期與時間"  />
     </div>
     <div id="pickbar">
       <div id="innerpickbar">

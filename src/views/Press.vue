@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Nav showBackArrow=ture showText=true navText="壓力評估量表" />
+        <Nav  showText=true navText="壓力評估量表" />
 
         <div id="background">
             <div id="Question">
