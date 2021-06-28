@@ -16,7 +16,7 @@ module.exports = {
         target: 將所有以 /api 為開頭請求轉發到 http://localhost:2600/api
       */
       '/api': {
-        target: 'http://localhost:2705/api/',
+        target: 'http://luffy.ee.ncku.edu.tw:2705/api/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
@@ -25,7 +25,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 'luffy.ee.ncku.edu.tw', // can be overwritten by process.env.HOST
     port: 8085, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
