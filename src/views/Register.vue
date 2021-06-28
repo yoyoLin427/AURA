@@ -168,23 +168,25 @@ export default {
               //註冊結果成功
               console.log("註冊成功");
               this.$store.commit("setUserInfo", $("input[name=inputID]").val());
+              console.log(this.$store.state.userName);
               if (this.$store.state.userName != "") {
                 this.$http
-                .post("/api/GetTreeNum", {
-                    id:this.$store.state.userName
-                })
-                .then((res) => {
-                  this.$store.commit("setNumber", res.body);
-                  if(this.$store.state.number != "") {
-                    this.$router.push({
-                      name: "home",
-                    });
-                  }
-                });                
+                  .post("/api/register", {
+                    id: this.$store.state.userName,
+                  })
+                  .then((res) => {
+                    console.log("註冊成");
+                    this.$store.commit("setNumber", res.body);
+                    if (this.$store.state.number != "") {
+                      this.$router.push({
+                        name: "home",
+                      });
+                    }
+                  });
+              } else {
+                console.log("此學號已有人註冊");
+                $("#reg_output").html("此學號已有人註冊");
               }
-            } else {
-              console.log("此學號已有人註冊");
-              $("#reg_output").html("此學號已有人註冊");
             }
           });
       }
