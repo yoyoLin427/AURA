@@ -398,21 +398,21 @@ module.exports = {
             connection.query(sql, [id], (err, result) => {
                 if (err) throw err;
                 if (result.length == 0) {
-                    var success = false;
-                    while (!success) {
-                        number = (Math.floor(Math.random() * 1000)).toString();
-                        connection.query(sql2, [number], (err, result) => {
-                            if (err) throw err;
-                            if (result.length == 0) {
-                                success = true;
-                                connection.query(sql3, [number, id], (err, result) => {
-                                    if (err) throw err;
-                                    res.send(number);
-                                })
+                    //var success = false;
+                    //while (!success) {
+                    number = (Math.floor(Math.random() * 1000)).toString();
+                    connection.query(sql2, [number], (err, result) => {
+                        if (err) throw err;
+                        if (result.length == 0) {
+                            //success = true;
+                            connection.query(sql3, [number, id], (err, result) => {
+                                if (err) throw err;
+                                res.send(number);
+                            })
 
-                            }
-                        });
-                    }
+                        }
+                    });
+                    //}
                 }
                 else {
                     res.send(result[0].Num)

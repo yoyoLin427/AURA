@@ -171,11 +171,10 @@ export default {
               console.log(this.$store.state.userName);
               if (this.$store.state.userName != "") {
                 this.$http
-                  .post("/api/register", {
+                  .post("/api/GetTreeNum", {
                     id: this.$store.state.userName,
                   })
                   .then((res) => {
-                    console.log("註冊成");
                     this.$store.commit("setNumber", res.body);
                     if (this.$store.state.number != "") {
                       this.$router.push({
