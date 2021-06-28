@@ -1,17 +1,6 @@
 <template>
   <div>
-    <div class="logobar">
-      <b-container>
-        <b-row>
-          <b-col class="text-center">
-            <img class="logoimg" src="@/assets/svg/logo.svg" />
-          </b-col>
-        </b-row>
-        <b-col class="imgright">
-          <img @click="toProfile()" class="usericonimg" src="@/assets/svg/usericon.svg" />
-        </b-col>
-      </b-container>
-    </div>
+    <Nav showUser=true ></Nav>
     <div class="emptybar"></div>
     <div class="banner">
       <img id="slide1" src="@/assets/yoyoLin/home_slide1.svg" />
