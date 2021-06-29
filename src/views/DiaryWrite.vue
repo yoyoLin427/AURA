@@ -432,10 +432,10 @@ a {
 }
 /* 隱藏原本的icon */
 .form-date__input[type="date"]::-webkit-calendar-picker-indicator {
-  /* 測試用 */
-width: 170px;
-  /* 正式width: 0px; */
-  
+  /* 測試用 *width: 170px;/
+
+  /* 正式 */
+  width: 0px;
   height: 100%;
   position: absolute;
   top: 0;

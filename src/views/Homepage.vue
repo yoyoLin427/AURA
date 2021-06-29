@@ -1,7 +1,9 @@
 <template>
   <div>
     <Nav showUser=true ></Nav>
-    <div class="emptybar"></div>
+    <!--
+      <div class="emptybar"></div>
+      -->
     <div class="banner">
       <img id="slide1" src="@/assets/yoyoLin/home_slide1.svg" />
       <img id="slide2" src="@/assets/yoyoLin/home_slide2.svg" />

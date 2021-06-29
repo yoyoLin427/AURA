@@ -95,7 +95,7 @@ export default {
 }
 #successtext3 {
   position: absolute;
-  width: 231px;
+  width: 250px;
   height: 16px;
   top: 176px;
   left: 70px;
