@@ -122,7 +122,7 @@
 	height: 9.74vh;
 	display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .button_light{
 	background: linear-gradient(180deg, #F9FEA5 -65.05%, #96FBC4 85.21%, #20E2D7 143.69%);
@@ -132,10 +132,10 @@
 	height: 9.74vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .button_mark{
-	height: 4.69vh;
+	width: 4.69vh;
 }
 .button_font{
 	font-family: Taipei Sans TC Beta;
