@@ -519,9 +519,14 @@ input {
     #9ffbdf 203.98%,
     #40e9d2 270.1%
   );
-  overflow: hidden;
+  overflow: auto;
 
   padding-top: 15px;
+}
+
+#rating {
+  display: flex;
+  align-items: baseline;
 }
 
 #rating label {
