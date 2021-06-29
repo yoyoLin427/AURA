@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showText="true" navText="心情成長樹" showUser="true" />
     <div class="btn_switch_box">
       <b-container>
@@ -27,6 +27,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .not_choose {
   font-family: Taipei Sans TC Beta;
   font-style: normal;

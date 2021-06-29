@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true" showText="true" navText="使用說明" />
     <div class="title">歡迎使用心靈成長樹!<br />這裡是一些相關規則說明</div>
     <div class="box">
@@ -49,6 +49,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .content {
   /* 內文3 */
 

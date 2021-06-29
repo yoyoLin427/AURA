@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="outerbox">
         <Nav  showText=true navText="壓力評估量表" />
 
         <div id="background">
@@ -35,6 +35,14 @@
 </template>
 
 <style rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #background{
     height: 93.7vh;
     background: linear-gradient(180deg, #FFFFFF 42.2%, #9FFBDF 203.98%, #40E9D2 270.1%);

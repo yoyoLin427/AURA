@@ -75,7 +75,7 @@ export default {
 .logobar {
   z-index: 1;
   position: fixed;
-  width: 100%;
+  width: 375px;
   top: 0px;
   margin: 0px auto;
   background: #ffffff;

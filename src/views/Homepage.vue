@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showUser=true ></Nav>
     <!--
       <div class="emptybar"></div>
       -->
     <div class="banner">
       <img id="slide1" src="@/assets/yoyoLin/home_slide1.svg" />
-      <img id="slide2" src="@/assets/yoyoLin/home_slide2.svg" />
+      <img id="slide2" @click="toContent(0)" src="@/assets/yoyoLin/home_slide2.svg" />
     </div>
     <div class="title">哈囉，歡迎來到Aura！</div>
     <div class="text_nofade">
@@ -73,6 +73,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 button {
   position: relative;
 
@@ -349,6 +357,7 @@ button {
   animation-delay: 0.3s; /*動畫延遲開始時間*/
   animation-iteration-count: 1; /*動畫次數，infinite 為無限次*/
   animation-fill-mode: forwards;
+  
 }
 @keyframes text_fadein {
   0% {
@@ -376,8 +385,8 @@ button {
   font-size: 13px;
   text-align: left;
   margin-top: 15px;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 25px;
+  padding-right: 25px;
 
   /* 深灰 */
 
@@ -391,8 +400,8 @@ button {
   font-size: 13px;
   text-align: left;
   margin-top: 15px;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 25px;
+  padding-right: 25px;
 
   /* 深灰 */
 
@@ -437,6 +446,14 @@ export default {
   },
 
   methods: {
+    toContent: function (num) {
+      this.$store.commit("setContentNum", num);
+      if (this.$store.state.num != "") {
+        this.$router.push({
+          name: "Content",
+        });
+      }
+    },
     handleScroll() {
       var scrollTop =
         window.pageYOffset ||

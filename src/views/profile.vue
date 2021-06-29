@@ -70,7 +70,11 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
   .navbar {
     position: absolute;
     width: 375px;

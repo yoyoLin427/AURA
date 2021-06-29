@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true" showText="true" navText="歷史紀錄" />
     <div class="chooseMonthBox">
       <b-container>
@@ -361,6 +361,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .text3 {
   /* 內文3 */
 

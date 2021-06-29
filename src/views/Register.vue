@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true"/>
     <div class="slideshowBox">
       <div class="slideText">
@@ -25,7 +25,7 @@
       <div class="Box">
         <img class="picBox" src="@/assets/yoyoLin/password.svg" />
         <input type="password" name="inputPassword" placeholder="請輸入密碼" />
-        <img class="picBox" src="@/assets/yoyoLin/eye.svg" />
+        
       </div>
       <button @click="btn_join">現在加入</button>
       <div id="reg_output"></div>
@@ -33,6 +33,15 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  height: 687px;
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #reg_output {
   text-align: center;
   padding-left: 40px;
@@ -72,6 +81,7 @@ input:focus {
 #background {
   position: relative;
   left: 30px;
+  top:20px;
 }
 .Box {
   position: relative;

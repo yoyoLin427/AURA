@@ -143,10 +143,14 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
+
 .reservation-container {
+  width: 375px;
   position: relative;
-  width: 100%;
-  height: 100%;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
   background: #ffffff;
   .navbar {
     position: absolute;

@@ -73,13 +73,17 @@
 </template>
 <style rel="stylesheet/scss" lang="scss" scoped>
 .container {
+    width: 375px;
+    position: relative;
+    left:0;
+    border-width:1px; border-style:solid;
+    border-color:#e2e2e2;
+    border-bottom-style:none;
     display: flex;
     padding-left: 0px;
     padding-right: 0px;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    height: 100%;
     background: #ffffff;
     .nav-conatiner{
         align-items: center;

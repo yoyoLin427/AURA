@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <div class="logobar">
       <b-container>
         <b-row>
@@ -20,7 +20,6 @@
       <div class="Box">
         <img class="picBox" src="@/assets/yoyoLin/password.svg" />
         <input type="password" name="inputPassword" placeholder="請輸入密碼" />
-        <img class="picBox" src="@/assets/yoyoLin/eye.svg" />
       </div>
     </div>
     <div id="login_output"></div>
@@ -34,6 +33,15 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  height: 687px;
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .text {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -54,7 +62,7 @@ img {
     z-index: 1;
     position:fixed;
     
-    width:100%;
+    width:375px;
     top: 0px;
     margin:0px auto;
     background: #FFFFFF;

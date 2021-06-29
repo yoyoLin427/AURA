@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="outerbox">
   		<Nav showBackArrow=true showText=true navText="匹配問題填答"></Nav>
 		<div id="layout_down">
 			<div class="content_box">
@@ -399,6 +399,14 @@ export default {
 </script>
 
 <style rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 body{
 	border: 0;
 	padding: 0;
@@ -411,7 +419,7 @@ button{
     outline: none;
     background: none;
     padding: 0;
-    border-radius: 1vw;
+    border-radius: 3px;
     cursor: pointer;
 }
 blockquote{
@@ -531,7 +539,7 @@ blockquote{
 }
 .content_box{
 	padding: 3vh 0 1vh 0;
-	width: 80vw;
+	width: 300px;
     text-align: left;
 }
 </style>

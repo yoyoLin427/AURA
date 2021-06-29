@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true" showText="true" navText="新增心情日記" />
     <b-alert
       :show="dismissCountDown"
@@ -20,7 +20,7 @@
       日記中有些部分遺漏了呢!
     </b-alert>
     <div class="background">
-      <div style="padding-left: 6.4vw; padding-right: 6.4vw">
+      <div style="padding-left: 18px; padding-right: 18px">
         <div class="top_text">回顧一天，選出一件最適合紀錄的心情事件吧！</div>
         <!--事件名稱-->
         <div>
@@ -171,6 +171,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #input_anoymous {
   margin-top: 5px;
   resize: none;
@@ -265,7 +273,7 @@
   position: fixed;
   width: 375px;
   height: 687px;
-  left: 0px;
+  left:calc(50vw - 187px);
   top: 0px;
 
   background: rgba(27, 27, 27, 0.5);

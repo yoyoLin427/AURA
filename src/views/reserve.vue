@@ -115,6 +115,14 @@ export default {
 .container{
   margin: 0px;
   padding: 0px;
+  
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+
 }
 #layout_reserve {
   display: flex;
@@ -125,7 +133,7 @@ button {
   outline: none;
   background: none;
   padding: 0;
-  border-radius: 1vw;
+  border-radius: 3px;
   cursor: pointer;
 }
 blockquote {
@@ -150,7 +158,7 @@ blockquote {
   height: 40vh;
 }
 #navbar {
-  width: 100vw;
+  width: 375px;
   height: 6.94vh;
   display: flex;
   align-items: center;
@@ -167,19 +175,19 @@ blockquote {
 #navbar_side {
   display: flex;
   justify-content: space-around;
-  width: 15vw;
+  width: 56px;
 }
 .navbar_button {
   width: 3.89vh;
   height: 3.89vh;
 }
 #navbar_record {
-  right: 15vw;
+  right: 56px;
   top: 1.5vh;
   position: absolute;
 }
 #navbar_user {
-  right: 5vw;
+  right: 18px;
   top: 1.5vh;
   position: absolute;
 }
@@ -233,7 +241,7 @@ blockquote {
 }
 #layout_down_reserve {
   padding: 0 4vh;
-  width: 100vw;
+  width: 375px;
 }
 #content_reserve {
   display: flex;

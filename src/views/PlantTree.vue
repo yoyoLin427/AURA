@@ -337,7 +337,7 @@ export default {
   position: fixed;
   width: 375px;
   height: 687px;
-  left: 0px;
+  left:calc(50vw - 187px);
   top: 0px;
 
   background: rgba(27, 27, 27, 0.5);
@@ -346,7 +346,7 @@ export default {
   position: fixed;
   width: 375px;
   height: 687px;
-  left: 0px;
+  left:calc(50vw - 187px);
   top: 0px;
 
   background: rgba(27, 27, 27, 0.5);

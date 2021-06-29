@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <Nav showBackArrow="true" showText="ture" navText="兌換樹種" />
+  <div class="outerbox">
+    <Nav showBackArrow="true" showText="true" navText="兌換樹種" />
     <div class="outer">
       <div class="pointbox">
         <img class="pointimg" src="@/yo_0627/exchange_point.svg" />
         <div class="pointtext">{{ this.getPoint }} 點</div>
       </div>
-      <b-container style="position: absolute; top: 80px">
+      <b-container style="position: absolute; top: 80px;padding-bottom:50px;">
         <b-row>
           <b-col style="text-align: right; padding: 0px">
             <img src="@/yo_0627/exchange_tree1.svg" />
@@ -46,6 +46,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .usetext {
   text-align: center;
   left: 8px;
@@ -63,6 +71,7 @@
 .outer {
   width: 375px;
   position: relative;
+  
 }
 .pointbox .pointimg {
   display: inline-block;

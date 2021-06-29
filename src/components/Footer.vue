@@ -98,7 +98,7 @@ export default {
 .footerbar {
   position: fixed;
   height: 49px;
-  width: 100%;
+  width: 375px;
   bottom: 0px;
   margin: 0px auto;
   background: #ffffff;

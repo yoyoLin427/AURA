@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true" />
     <div id="layout_up">
       <div class="half_region">
@@ -239,6 +239,14 @@ export default {
 </script>
 
 <style scoped rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 html {
   scroll-behavior: smooth;
 }

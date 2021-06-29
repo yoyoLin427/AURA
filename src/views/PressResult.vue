@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="ture" showText="true" navText="壓力評估量表-檢測結果" />
     <div id="layout">
       <div id="region">
@@ -32,6 +32,14 @@
 </template>
 
 <style>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #layout {
   height: 93.7vh;
   background: linear-gradient(

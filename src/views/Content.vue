@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="outerbox">
         <Nav showBackArrow=true showText=true navText="讀讀文章"></Nav>
         
         <div id="layout_Content">
@@ -134,8 +134,16 @@
 </template>
 
 <style scoped rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #layout_Content{
-    width: 100vw;
+    width: 375px;
     padding: 2.96vh;
     text-align: left;
 }

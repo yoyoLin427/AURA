@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outerbox">
     <Nav showBackArrow="true" showText="true" navText="壓力評估量表" />
     <div class="background">
       <img style="padding-top: 90px" src="@/assets/yoyoLin/press_img.svg" />
@@ -16,6 +16,14 @@
   </div>
 </template>
 <style scoped>
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 .text {
   font-family: Taipei Sans TC Beta;
   font-style: normal;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="outerbox">
         <Nav showBackArrow=true showText=true navText="醫療院所"></Nav>
 
         <div id="layout">
@@ -152,6 +152,14 @@
 </template>
 
 <style scoped rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #layout {
   height: 92.5vh;
   background: linear-gradient(
@@ -220,14 +228,14 @@
 }
 .divide_bar {
   position: relative;
-  width: 100vw;
+  width: 375px;
   height: 0;
   /*border: 0.2vh solid #A3FECC;*/
   border: 0.0123vh solid rgba(163, 254, 204, 1);
   background: #a3fecc;
 }
 .content {
-  width: 100vw;
+  width: 375px;
   height: 10.48vh;
   background: #ffffff;
   cursor: pointer;
@@ -237,14 +245,14 @@
   align-items: center;
 }
 .font_box {
-  width: 80vw;
+  width: 300px;
   padding: 0 0 0 2.96vh;
   text-align: left;
 }
 .button {
   position: relative;
   left: 2.96vh;
-  width: 10vw;
+  width: 37px;
 }
 .title1 {
   font-family: Taipei Sans TC Beta;

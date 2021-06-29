@@ -358,6 +358,10 @@ export default {
   width: 375px;
   height: 687px;
   overflow: hidden;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
 }
 .darken {
   position: absolute;

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="outerbox">
   		<Nav showUser=true />
 		<div id="layout">
 			<div id="layout_up">	
@@ -54,6 +54,14 @@
 </template>
 
 <style scoped rel="stylesheet" type="text/css">
+.outerbox{
+  width: 375px;
+  position: relative;
+  left:calc(50vw - 187px);
+  border-width:1px; border-style:solid;
+  border-color:#e2e2e2;
+  border-bottom-style:none;
+}
 #layout{
 	height: 85vh;
 	background: linear-gradient(180deg, #FFFFFF 42.2%, #9FFBC1 203.98%, #40E9D2 270.1%);
@@ -86,7 +94,7 @@
 	top: 5.42vh;
 }
 .font3{
-	width: 88vw;
+	width: 330px;
     text-align: left;
 	font-family: Taipei Sans TC Beta;
 	font-style: normal;
@@ -102,7 +110,7 @@
 	top: 8.3vh;
 }
 .button_list_Others{
-	width: 100vw;
+	width: 375px;
     display: flex;
     justify-content: space-evenly;
 }
